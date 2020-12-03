@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+}
+
+nav {
+    position: relative;
+    z-index: 9;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://thumbor.thedailymeal.com/DSzz48ZFjmSQyKsaw1u6CvO1hDI=//https://www.theactivetimes.com/sites/default/files/story/2019/iStock-1162428342.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.nav ul.hide {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay .jc-center {
+    font-size: 2rem;
+    font-weight: 200;
+    
+}
+
+.overlay .jc-center h1 {
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.nav-line {
+    margin-right: 20px;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-line a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background: #2c2d2e;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.8rem;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card img {
+    height: 500px;
+    width: 500px;
+}
+
+
+/* Contact Section */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-line {
+    margin-bottom: 10px;
+}
+
+.cmain-container h3, .contact-container h3 {
+    padding-left: 20px;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.contact-details {
+    padding-left: 20px;
+}
+
+.contact-details small {
+    padding: 10px 0;
+}
+
+.dot-levels {
+    display: flex;
+}
+
+.dot-levels li {
+    list-style-type: none;
+}
+
+.dot-levels .dot {
+    background-color: #bac964;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+}
+
+.dot-levels .not {
+    background-color: #879099;
+}
