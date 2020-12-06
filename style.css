@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,18 +15,65 @@ body {
     color: white;
 }
 
+main {
+    background: #2c2d2e;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+h4 {
+    color: #bac964;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    padding: 12px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Helpers */
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+
+/* Navbar */
+
 nav {
     position: relative;
     z-index: 9;
-}
-
-.banner {
-    position: relative;
-    min-height: 100vh;
-    background-image: url('https://thumbor.thedailymeal.com/DSzz48ZFjmSQyKsaw1u6CvO1hDI=//https://www.theactivetimes.com/sites/default/files/story/2019/iStock-1162428342.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .nav {
@@ -33,8 +82,42 @@ nav {
     padding: 20px;
 }
 
+ul {
+    position: relative;
+}
+
+.nav-line {
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-line a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-bars {
+    color: black;
+}
+
+/* 
 .nav ul.hide {
-    display: none;
+    top: -100px;
+    background-color: red;
+    transition: all 1s;
+} */
+
+
+/* Home section */
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://thumbor.thedailymeal.com/DSzz48ZFjmSQyKsaw1u6CvO1hDI=//https://www.theactivetimes.com/sites/default/files/story/2019/iStock-1162428342.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .overlay {
@@ -53,7 +136,6 @@ nav {
 .overlay .jc-center {
     font-size: 2rem;
     font-weight: 200;
-    
 }
 
 .overlay .jc-center h1 {
@@ -61,73 +143,80 @@ nav {
     margin-bottom: 10px;
 }
 
-.nav-line {
-    margin-right: 20px;
-    list-style-type: none;
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-.nav-line a {
-    text-decoration: none;
-    color: white;
-}
-
-main {
-    background: #2c2d2e;
-}
-
-h2 {
-    font-size: 4rem;
-    font-weight: 200;
-    text-align: center;
-    padding: 20px 0;
-}
+/* Elements (reusing) */
 
 .card {
+    background-color: rgba(51, 51, 68, 0.6);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.bg-img-conf {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.paragraph {
+    color: #ffffff96;
+    line-height: 20px;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.flex-center {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+
+/* Portfolio projects' cards */
+
+.js-img {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhdFgKwWT0BD32WAPhBz04H7yjV1VMu7axw&usqp=CAU');
+}
+
+.css-img {
+    background-image: url('https://miro.medium.com/max/600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg');
+}
+
+.react-img {
+    background-image: url('https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png');
+}
+
+.python-img {
+    background-image: url('https://anthoncode.com/wp-content/uploads/2019/01/python-logo-png.png');
+}
+
+.card .text-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .description {
+    color: #bac964;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+
+/* Resume: About Me  */
+
+.img-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    font-size: 1.8rem;
-}
-
-.card h3 {
-    margin: 10px 0;
-}
-
-.card img {
-    height: 500px;
-    width: 500px;
+    margin: 20px 0;
 }
 
 
-/* Contact Section */
-
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.form-line {
-    margin-bottom: 10px;
-}
-
-.cmain-container h3, .contact-container h3 {
-    padding-left: 20px;
-    font-weight: 200;
-    font-size: 2rem;
-}
-
-.contact-details {
-    padding-left: 20px;
-}
-
-.contact-details small {
-    padding: 10px 0;
-}
+/* Resume: Skills */
 
 .dot-levels {
     display: flex;
@@ -140,11 +229,340 @@ h2 {
 .dot-levels .dot {
     background-color: #bac964;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 10px;
+    width: 12px;
+    height: 12px;
+    margin: 20px;
 }
 
 .dot-levels .not {
     background-color: #879099;
+}
+
+.html p, .css p, .python p, .git p, .sql p, .javascript p, .english p, .spanish p, .italian p {
+    font-size: 1.3rem;    
+}
+
+
+/* Buttons */
+
+.cv-button {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    background-color: #6C757D;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    background-color: #bac964;
+    padding: 13px 15px;
+    border-radius: 20px;
+    border: 0;
+    letter-spacing: 2px;
+    width: 160px;
+    margin-bottom: 30px;
+}
+
+/* Education section */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.studied-at {
+    color: #FFFFFF4D;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.nyack {
+    margin: 0;
+}
+
+.dates {
+    font-size: 1.2rem;
+}
+
+
+/* Contact section FORM */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-line {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333333;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+/* My contact details (not form) */
+
+.contact-details small {
+    display: inline-block;
+    color: #224782;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.6rem;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.icons-container a{
+    color: white;
+}
+
+.icon { 
+    padding: 15px;
+}
+
+
+/* Column sizes */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+} 
+
+/* Small devices */
+@media (min-width: 576px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    
+    .col-sm-3 {
+        width: 25%;
+    }
+    
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    
+    .col-sm-9 {
+        width: 75%;
+    }
+    
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    } 
+}
+
+/* Medium devices  */
+@media (min-width: 768px) {
+    .fa-bars {
+        visibility: hidden;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu a {
+        padding: 15px 20px;
+    }
+
+    .nav ul a {
+        letter-spacing: 2px;
+    }
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+    
+    .col-md-2 {
+        width: 16.66%;
+    }
+    
+    .col-md-3 {
+        width: 25%;
+    }
+    
+    .col-md-4 {
+        width: 33.33%;
+    }
+    
+    .col-md-5 {
+        width: 41.66%;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-7 {
+        width: 58.33%;
+    }
+    
+    .col-md-8 {
+        width: 66.66%;
+    }
+    
+    .col-md-9 {
+        width: 75%;
+    }
+    
+    .col-md-10 {
+        width: 83.33%;
+    }
+    
+    .col-md-11 {
+        width: 91.66%;
+    }
+    
+    .col-md-12 {
+        width: 100%;
+    } 
+
+    .nav ul.hide {
+        display: flex;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    
+    .col-lg-3 {
+        width: 25%;
+    }
+    
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    
+    .col-lg-6 {
+        width: 50%;
+    }
+    
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    
+    .col-lg-9 {
+        width: 75%;
+    }
+    
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    
+    .col-lg-12 {
+        width: 100%;
+    } 
 }

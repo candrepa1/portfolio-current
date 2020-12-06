@@ -9,6 +9,7 @@
     <script src="javascript.js"></script>
 </head>
 <body>
+
     <!-- Banner & Header -->
     <div class="banner">
         <header>
@@ -20,7 +21,7 @@
                     <li class="nav-line"><a href="#Contact">CONTACT</a></li>
                 </ul>
                 <a onclick="showMenu()" href="#">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars fa-3x"></i>
                 </a>
             </nav>
         </header>
@@ -33,188 +34,271 @@
         </div>
     </div>
     <!-- /Banner & Header -->
+
     <main>
+        
         <!-- Portfolio -->
         <section id="Portfolio">
             <h2>Portfolio</h2>
-            <div class="project-container">
-                <div class="card">
-                    <picture class="first-project">
-                        <img src="https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png" alt="css-project">
-                    </picture>
-                    <h3>CSS Project</h3>
-                    <p>A description of the project</p>
-                </div>
-                <div class="card">
-                    <picture class="second-project">
-                        <img src="https://d8285fmxt3duy.cloudfront.net/public/articulos/img/java-script1.jpg" alt="javascript-project">
-                    </picture>
-                    <h3>JavaScript Project</h3>
-                    <p>A description of the project</p>
-                </div>
-                <div class="card">
-                    <picture class="second-project">
-                        <img src="https://itsg-global.com/wp-content/uploads/2016/09/react-js-to-use-or-not-to-use.png" alt="javascript-project">
-                    </picture>
-                    <h3>React Project</h3>
-                    <p>A description of the project</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="css-img bg-img-conf"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="text-part">
+                                        <h3>CSS Project</h3>
+                                        <p class="description">A description of the project</p>
+                                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt cum beatae aliquid excepturi libero odit hic optio molestias, accusamus eveniet totam, eaque doloremque possimus exercitationem veritatis pariatur id quisquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="js-img bg-img-conf"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="text-part">
+                                        <h3>JavaScript Project</h3>
+                                        <p class="description">A description of the project</p>
+                                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt cum beatae aliquid excepturi libero odit hic optio molestias, accusamus eveniet totam, eaque doloremque possimus exercitationem veritatis pariatur id quisquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="react-img bg-img-conf"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="text-part">
+                                        <h3>React Project</h3>
+                                        <p class="description">A description of the project</p>
+                                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt cum beatae aliquid excepturi libero odit hic optio molestias, accusamus eveniet totam, eaque doloremque possimus exercitationem veritatis pariatur id quisquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="python-img bg-img-conf"></div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="text-part">
+                                        <h3>Python Project</h3>
+                                        <p class="description">A description of the project</p>
+                                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt cum beatae aliquid excepturi libero odit hic optio molestias, accusamus eveniet totam, eaque doloremque possimus exercitationem veritatis pariatur id quisquam.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- /Portfolio -->
+
         <!-- Resume -->
         <section id="Resume">
             <h2>Resume</h2>
-            <h3>About Me</h3>
-            <p><strong>Hello! I'm Camila Parada Valderrama.</strong><br>
-            Frontend Developer from Sogamoso, Colombia. I'm currently looking for a job opportunity to apply my skills and learn further.</p>
-            <div class="coding-container">
-                <h3>Coding Skills</h3>
-                <div class="html">
-                    <p>HTML</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
+            <div class="container">
+                <picture class="img-container">
+                    <img src="./0.jpeg" alt="Camila's picture">
+                </picture>
+                <h3>About Me</h3>
+                <p class="paragraph mb">Frontend Developer from Sogamoso, Colombia. I'm currently looking for a job opportunity to apply my skills and learn further.</p>
+                <p class="paragraph mb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam nam, at obcaecati quae ratione neque eveniet animi! Facilis facere quia assumenda exercitationem cum pariatur soluta alias excepturi similique odit.</p>
+                <a href="./CV_CamilaParadaValderrama.pdf" target="_blank" class="cv-button">DOWNLOAD CV</a>
+                <div class="row">
+                    <div class="col-12 col-md-6 flex-center">
+                        <h3 class="mb mt">Coding Skills</h3>
+                        <div class="html">
+                            <p>HTML</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="css">
+                            <p class="mt">CSS</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="python">
+                            <p class="mt">Python</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="git">
+                            <p class="mt">Git</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="sql">
+                            <p class="mt">SQL</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="javascript">
+                            <p class="mt">JavaScript</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 flex-center">
+                        <h3 class="mt mb">Language Skills</h3>
+                        <div class="english">
+                            <p>English</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="spanish">
+                            <p class="mt">Spanish</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                            </ul>
+                        </div>
+                        <div class="italian">
+                            <p class="mt">Italian</p>
+                            <ul class="dot-levels">
+                                <li><div class="dot"></div></li>
+                                <li><div class="dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                                <li><div class="not dot"></div></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="css">
-                    <p>CSS</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
+                <h3>Education</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card education">
+                            <small class="dates">November 2020 - Present</small>
+                            <h4>Full Stack Web Development and Computer Science Fundamentals</h4>
+                            <p class="paragraph">Coding bootcamp teaching HTML, CSS, JavaScript, and React for the Frontend, with Python, Django, and Node.js for the Backend. Complementing the main technologies with SQL, Algorithms and Data Structures, AWS, and Google Cloud.</p>
+                            <p class="studied-at">Academlo</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card education">
+                            <small class="dates">August 2020 - Present</small>
+                            <h4>Full Stack Development</h4>
+                            <p class="paragraph">Learning and practicing HTML, CSS, JavaScript, Python, Bootstrap, SQL, and other technologies.</p>
+                            <p class="studied-at">Platzi</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card education">
+                            <small class="dates">November 2020 - Present</small>
+                            <h4>CS50x: Introduction to Computer Science</h4>
+                            <p class="paragraph">Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML.</p>
+                            <p class="studied-at">HarvardX</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card education">
+                            <small class="dates">August 2016 - May 2020</small>
+                            <h4>Bachelor of Science - BS, Business and Accounting</h4>
+                            <p class="studied-at nyack">Nyack College</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="python">
-                    <p>Python</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
-                </div>
-                <div class="git">
-                    <p>Git</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
-                </div>
-                <div class="sql">
-                    <p>SQL</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
-                </div>
-                <div class="javascript">
-                    <p>JavaScript</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
-                </div>
-            <div class="language-container">
-                <h3>Language Skills</h3>
-                <div class="english">
-                    <p>English</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                    </ul>
-                </div>
-                <div class="spanish">
-                    <p>Spanish</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                    </ul>
-                </div>
-                <div class="italian">
-                    <p>Italian</p>
-                    <ul class="dot-levels">
-                        <li><div class="dot"></div></li>
-                        <li><div class="dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                        <li><div class="not dot"></div></li>
-                    </ul>
-                </div>
-            </div>
-            <h3>Education</h3>
-            <div class="education-card">
-                <small>November 2020 - Present</small>
-                <h4>Full Stack Web Development and Computer Science Fundamentals</h4>
-                <p>Coding bootcamp teaching HTML, CSS, JavaScript, and React for the Frontend, with Python, Django, and Node.js for the Backend.</p>
-                <p>Academlo</p>
-            </div>
-            <div class="education-card">
-                <small>August 2020 - Present</small>
-                <h4>Full Stack Development</h4>
-                <p>Learning and practicing HTML, CSS, JavaScript, Python, Bootstrap, SQL, and other technologies.</p>
-                <p>Platzi</p>
-            </div>
-            <div class="education-card">
-                <small>August 2020 - Present</small>
-                <h4>CS50</h4>
-                <p></p>
-                <p>Harvard</p>
-            </div>
-            <div class="education-card">
-                <small>August 2016 - May 2020</small>
-                <h4>Bachelor of Science - BS, Business and Accounting</h4>
-                <p>Nyack College</p>
             </div>
         </section>
         <!-- /Resume -->
+
         <!-- Contact -->
-        <section id="Contact" class="cmain-container">
+        <section id="Contact">
             <h2>Contact</h2>
-            <h3>Get In Touch</h3>
-                <form action="" class="contact-container">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Your Name" class="form-line">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Your Email" class="form-line">
-                    <label for="phone"></label>
-                    <input type="number" id="phone" placeholder="Your Phone Number" class="form-line">
-                    <label for="message"></label>
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Write a message" class="form-line"></textarea>
-                </form>
-            <!-- My contact details -->
-                <h3 >My Contact Details</h3>
-                <div class="contact-details">
-                    <small>EMAIL</small>
-                    <p>candrepa1@gmail.com</p>
-                    <small>PHONE</small>
-                    <p>+57 3147961792</p>
-                    <small>SOCIAL MEDIA</small>
+            <div class="container">
+                <h3 class="mb">Get In Touch</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <form action="" class="contact-container">
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your Name" class="form-line">
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="Your Email" class="form-line">
+                            <label for="phone"></label>
+                            <input type="tel" id="phone" placeholder="Your Phone Number" class="form-line">
+                            <label for="message"></label>
+                            <textarea name="" id="message" cols="30" rows="10" placeholder="Write a message" class="form-line"></textarea>
+                            <input type="submit" value="SEND MESSAGE" class="button mt mb">
+                        </form>
+                    </div>
                 </div>
-            <!-- social media icons -->
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <h3>My Contact Details</h3>
+                        <div class="contact-details">
+                            <small>EMAIL</small>
+                            <p>candrepa1@gmail.com</p>
+                            <small>PHONE</small>
+                            <p class="pb">+57 3147961792</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="icons-container">
+                            <a href="https://www.linkedin.com/in/candrepa1/" target="_blank"><i class="fab fa-linkedin-in fa-4x icon"></i></a>
+                            <a href="https://github.com/candrepa1" target="_blank"><i class="fab fa-github fa-4x icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- /Contact -->
+
     </main>
 </body>
 </html>
