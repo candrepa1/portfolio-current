@@ -114,7 +114,6 @@ ul {
     transition: all 1s;
 }
 
-
 /* Home section */
 
 .banner {
@@ -474,8 +473,12 @@ ul {
     }
 
     .nav ul {
-        top: auto;
+        padding-top: 20px;
         right: auto;
+    }
+
+    .nav ul.hide {
+        top: 0;
     }
 
     .col-md-1 {
