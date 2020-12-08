@@ -68,6 +68,10 @@ h4 {
     padding-bottom: 20px;
 }
 
+.pt {
+    padding-top: 20px;
+}
+
 
 /* Navbar */
 
@@ -180,6 +184,14 @@ ul {
     align-items: center;
 }
 
+.mr {
+    margin-right: 20px;
+}
+
+.mt-extra {
+    margin-top: 50px;
+}
+
 
 /* Portfolio projects' cards */
 
@@ -243,9 +255,17 @@ ul {
     background-color: #879099;
 }
 
+/* .htmlm .css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
 .html p, .css p, .python p, .git p, .sql p, .javascript p, .english p, .spanish p, .italian p {
-    font-size: 1.3rem;    
+    font-size: 1.3rem;   
 }
+
 
 
 /* Buttons */
@@ -481,6 +501,41 @@ ul {
         top: 0;
     }
 
+    .nav {
+        justify-content: center;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .coding-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+    
+    }
+
+    /* .javascript {
+        padding-left: 30px;
+    }
+
+    .python {
+        padding-left: 20px;
+    } */
+
+    .languages-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        width: 50%;
+    }   
+
     .col-md-1 {
         width: 8.33%;
     }
@@ -527,14 +582,6 @@ ul {
     
     .col-md-12 {
         width: 100%;
-    } 
-
-    .nav ul.hide {
-        display: flex;
-    }
-
-    .nav {
-        justify-content: center;
     }
 }
 
